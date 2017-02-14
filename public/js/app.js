@@ -7,6 +7,7 @@ class ProductList extends React.Component {
     this.state = {
       products: [],
     };
+    this.handleProductUpVote = this.handleProductUpVote.bind(this);
   }
 componentDidMount() {
   this.setState({ products: Seed.products });
